@@ -30,7 +30,6 @@ C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\bin\Debug\netcorea
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\bin\Debug\netcoreapp3.1\YamlDotNet.dll
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.csprojAssemblyReference.cache
-C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.Form1.resources
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.csproj.GenerateResource.cache
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.AssemblyInfoInputs.cache
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.AssemblyInfo.cs
@@ -39,3 +38,5 @@ C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcorea
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.dll
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.pdb
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.genruntimeconfig.cache
+C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.PodsForm.resources
+C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.MainForm.resources
