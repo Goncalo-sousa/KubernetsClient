@@ -22,7 +22,7 @@ namespace KubernetsClient
         private void PodsForm_Load(object sender, EventArgs e)
         {
             listPods();
-            
+
         }
 
         private void listPods()
