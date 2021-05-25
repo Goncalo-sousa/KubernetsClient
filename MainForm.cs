@@ -74,6 +74,8 @@ namespace KubernetsClient
                 using (Stream fileStream = File.Create(@"C:\Users\Goncalo\.kube\config"))
                 {
                     sftp.DownloadFile("/home/ubuntu/.kube/config", fileStream);
+                    sftp.Disconnect();
+                    sftp.Dispose();
                 }
 
 
@@ -168,9 +170,14 @@ namespace KubernetsClient
 
         private void btnPods_Click(object sender, EventArgs e)
         {
-            namespaceSelected = this.listBox1.SelectedItem.ToString();
-            PodsForm formAux = new PodsForm(this);
-            formAux.ShowDialog();
+            if (listBox1.SelectedIndex != -1)
+            {
+                namespaceSelected = this.listBox1.SelectedItem.ToString();
+                PodsForm formAux = new PodsForm(this);
+                formAux.ShowDialog();
+            }
+            else { MessageBox.Show("Select a namespace !"); }
+
         }
     }
 }

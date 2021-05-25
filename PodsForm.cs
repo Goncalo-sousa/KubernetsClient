@@ -40,6 +40,7 @@ namespace KubernetsClient
             string nameNS = null;
             formAux.InputBox("Pod - Name", "Insert name:", ref nameNS);
             var pod = new V1Pod { Metadata = new V1ObjectMeta { Name = nameNS } };
+            //var result = formAux.client.CreateNamespacedPod(pod, formAux.namespaceSelected);
         }
     }
 }
