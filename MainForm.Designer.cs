@@ -41,6 +41,7 @@ namespace KubernetsClient
             this.btnCreateNamespace = new System.Windows.Forms.Button();
             this.btnDeleteNamespace = new System.Windows.Forms.Button();
             this.btnPods = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -114,9 +115,9 @@ namespace KubernetsClient
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(605, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
+            this.label3.Text = "Nodes:";
             // 
             // btnCreateNamespace
             // 
@@ -148,11 +149,21 @@ namespace KubernetsClient
             this.btnPods.UseVisualStyleBackColor = true;
             this.btnPods.Click += new System.EventHandler(this.btnPods_Click);
             // 
-            // Main
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(589, 340);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Deployment";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPods);
             this.Controls.Add(this.btnDeleteNamespace);
             this.Controls.Add(this.btnCreateNamespace);
@@ -165,7 +176,7 @@ namespace KubernetsClient
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Main";
+            this.Name = "MainForm";
             this.Text = "Create Namespace";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -187,6 +198,7 @@ namespace KubernetsClient
         private System.Windows.Forms.Button btnCreateNamespace;
         private System.Windows.Forms.Button btnDeleteNamespace;
         private System.Windows.Forms.Button btnPods;
+        private System.Windows.Forms.Button button1;
     }
 }
 

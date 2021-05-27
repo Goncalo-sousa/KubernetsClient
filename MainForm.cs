@@ -19,6 +19,7 @@ namespace KubernetsClient
     {
         public Kubernetes client;
         public string namespaceSelected;
+        public string nodeSelected;
 
         public MainForm()
         {
@@ -168,11 +169,13 @@ namespace KubernetsClient
             return dialogResult;
         }
 
+
         private void btnPods_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedIndex != -1)
             {
                 namespaceSelected = this.listBox1.SelectedItem.ToString();
+                nodeSelected = this.comboBoxNodes.Text;
                 PodsForm formAux = new PodsForm(this);
                 formAux.ShowDialog();
             }
