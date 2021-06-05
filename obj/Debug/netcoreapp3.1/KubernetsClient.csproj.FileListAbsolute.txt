@@ -29,7 +29,6 @@ C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\bin\Debug\netcorea
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\bin\Debug\netcoreapp3.1\YamlDotNet.dll
-C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.csprojAssemblyReference.cache
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.csproj.GenerateResource.cache
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.AssemblyInfoInputs.cache
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.AssemblyInfo.cs
@@ -40,3 +39,6 @@ C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcorea
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.genruntimeconfig.cache
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.PodsForm.resources
 C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.MainForm.resources
+C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.DeploymentForm.resources
+C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.csproj.AssemblyReference.cache
+C:\Users\Goncalo\source\repos\KubernetsClient\KubernetsClient\obj\Debug\netcoreapp3.1\KubernetsClient.ServiceForm.resources

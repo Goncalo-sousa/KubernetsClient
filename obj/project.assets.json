@@ -56,7 +56,7 @@
           "lib/netstandard2.0/IdentityModel.OidcClient.dll": {}
         }
       },
-      "KubernetesClient/5.0.9": {
+      "KubernetesClient/5.0.10": {
         "type": "package",
         "dependencies": {
           "AutoMapper": "9.0.0",
@@ -1660,14 +1660,14 @@
         "lib/netstandard2.0/IdentityModel.OidcClient.xml"
       ]
     },
-    "KubernetesClient/5.0.9": {
-      "sha512": "MnwRjk4uYldwbaPgC1oaX2qHxe0Mc/6znzJGC263uih3nx+TsgH3W6ExyY/YSNTY5EVoi3BtWTnEwI130ybnvg==",
+    "KubernetesClient/5.0.10": {
+      "sha512": "RCE6zZa53UfSSygSiLcozatRhXx3DbRRMBExRdccUWghgTxuNqTyXuEIWWX7aGtHEV5GDFDz2QOASQNn0eNvVg==",
       "type": "package",
-      "path": "kubernetesclient/5.0.9",
+      "path": "kubernetesclient/5.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "kubernetesclient.5.0.9.nupkg.sha512",
+        "kubernetesclient.5.0.10.nupkg.sha512",
         "kubernetesclient.nuspec",
         "lib/net5.0/KubernetesClient.dll",
         "lib/net5.0/KubernetesClient.pdb",
@@ -5745,7 +5745,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "KubernetesClient >= 5.0.9",
+      "KubernetesClient >= 5.0.10",
       "SSH.NET >= 2020.0.1"
     ]
   },
@@ -5790,7 +5790,7 @@
         "dependencies": {
           "KubernetesClient": {
             "target": "Package",
-            "version": "[5.0.9, )"
+            "version": "[5.0.10, )"
           },
           "SSH.NET": {
             "target": "Package",
@@ -5815,7 +5815,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

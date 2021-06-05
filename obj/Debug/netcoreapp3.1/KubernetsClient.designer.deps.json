@@ -56,7 +56,7 @@
           }
         }
       },
-      "KubernetesClient/5.0.9": {
+      "KubernetesClient/5.0.10": {
         "dependencies": {
           "AutoMapper": "9.0.0",
           "Fractions": "4.0.1",
@@ -71,7 +71,7 @@
         "runtime": {
           "lib/netstandard2.1/KubernetesClient.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.9.4012"
+            "fileVersion": "5.0.10.64210"
           }
         }
       },
@@ -1403,12 +1403,12 @@
       "path": "identitymodel.oidcclient/3.1.2",
       "hashPath": "identitymodel.oidcclient.3.1.2.nupkg.sha512"
     },
-    "KubernetesClient/5.0.9": {
+    "KubernetesClient/5.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MnwRjk4uYldwbaPgC1oaX2qHxe0Mc/6znzJGC263uih3nx+TsgH3W6ExyY/YSNTY5EVoi3BtWTnEwI130ybnvg==",
-      "path": "kubernetesclient/5.0.9",
-      "hashPath": "kubernetesclient.5.0.9.nupkg.sha512"
+      "sha512": "sha512-RCE6zZa53UfSSygSiLcozatRhXx3DbRRMBExRdccUWghgTxuNqTyXuEIWWX7aGtHEV5GDFDz2QOASQNn0eNvVg==",
+      "path": "kubernetesclient/5.0.10",
+      "hashPath": "kubernetesclient.5.0.10.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",

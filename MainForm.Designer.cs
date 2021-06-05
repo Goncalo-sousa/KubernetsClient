@@ -36,12 +36,13 @@ namespace KubernetsClient
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBoxNodes = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCreateNamespace = new System.Windows.Forms.Button();
             this.btnDeleteNamespace = new System.Windows.Forms.Button();
             this.btnPods = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDeployment = new System.Windows.Forms.Button();
+            this.btnServices = new System.Windows.Forms.Button();
+            this.listViewNodes = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // textBox1
@@ -97,23 +98,15 @@ namespace KubernetsClient
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(266, 89);
+            this.listBox1.Location = new System.Drawing.Point(266, 130);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(504, 229);
             this.listBox1.TabIndex = 6;
             // 
-            // comboBoxNodes
-            // 
-            this.comboBoxNodes.FormattingEnabled = true;
-            this.comboBoxNodes.Location = new System.Drawing.Point(649, 12);
-            this.comboBoxNodes.Name = "comboBoxNodes";
-            this.comboBoxNodes.Size = new System.Drawing.Size(121, 23);
-            this.comboBoxNodes.TabIndex = 7;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(605, 15);
+            this.label3.Location = new System.Drawing.Point(422, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 8;
@@ -121,7 +114,7 @@ namespace KubernetsClient
             // 
             // btnCreateNamespace
             // 
-            this.btnCreateNamespace.Location = new System.Drawing.Point(266, 340);
+            this.btnCreateNamespace.Location = new System.Drawing.Point(266, 381);
             this.btnCreateNamespace.Name = "btnCreateNamespace";
             this.btnCreateNamespace.Size = new System.Drawing.Size(115, 23);
             this.btnCreateNamespace.TabIndex = 9;
@@ -131,7 +124,7 @@ namespace KubernetsClient
             // 
             // btnDeleteNamespace
             // 
-            this.btnDeleteNamespace.Location = new System.Drawing.Point(387, 340);
+            this.btnDeleteNamespace.Location = new System.Drawing.Point(387, 381);
             this.btnDeleteNamespace.Name = "btnDeleteNamespace";
             this.btnDeleteNamespace.Size = new System.Drawing.Size(115, 23);
             this.btnDeleteNamespace.TabIndex = 10;
@@ -141,7 +134,7 @@ namespace KubernetsClient
             // 
             // btnPods
             // 
-            this.btnPods.Location = new System.Drawing.Point(680, 340);
+            this.btnPods.Location = new System.Drawing.Point(680, 381);
             this.btnPods.Name = "btnPods";
             this.btnPods.Size = new System.Drawing.Size(90, 23);
             this.btnPods.TabIndex = 11;
@@ -149,26 +142,47 @@ namespace KubernetsClient
             this.btnPods.UseVisualStyleBackColor = true;
             this.btnPods.Click += new System.EventHandler(this.btnPods_Click);
             // 
-            // button1
+            // btnDeployment
             // 
-            this.button1.Location = new System.Drawing.Point(589, 340);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Deployment";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDeployment.Location = new System.Drawing.Point(589, 381);
+            this.btnDeployment.Name = "btnDeployment";
+            this.btnDeployment.Size = new System.Drawing.Size(85, 23);
+            this.btnDeployment.TabIndex = 12;
+            this.btnDeployment.Text = "Deployment";
+            this.btnDeployment.UseVisualStyleBackColor = true;
+            this.btnDeployment.Click += new System.EventHandler(this.btnDeployment_Click);
+            // 
+            // btnServices
+            // 
+            this.btnServices.Location = new System.Drawing.Point(508, 381);
+            this.btnServices.Name = "btnServices";
+            this.btnServices.Size = new System.Drawing.Size(75, 23);
+            this.btnServices.TabIndex = 13;
+            this.btnServices.Text = "Services";
+            this.btnServices.UseVisualStyleBackColor = true;
+            this.btnServices.Click += new System.EventHandler(this.btnServices_Click);
+            // 
+            // listViewNodes
+            // 
+            this.listViewNodes.HideSelection = false;
+            this.listViewNodes.Location = new System.Drawing.Point(472, 15);
+            this.listViewNodes.Name = "listViewNodes";
+            this.listViewNodes.Size = new System.Drawing.Size(298, 97);
+            this.listViewNodes.TabIndex = 14;
+            this.listViewNodes.UseCompatibleStateImageBehavior = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listViewNodes);
+            this.Controls.Add(this.btnServices);
+            this.Controls.Add(this.btnDeployment);
             this.Controls.Add(this.btnPods);
             this.Controls.Add(this.btnDeleteNamespace);
             this.Controls.Add(this.btnCreateNamespace);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBoxNodes);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
@@ -193,12 +207,14 @@ namespace KubernetsClient
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBoxNodes;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCreateNamespace;
         private System.Windows.Forms.Button btnDeleteNamespace;
         private System.Windows.Forms.Button btnPods;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDeployment;
+        private System.Windows.Forms.Button btnServices;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewNodes;
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "REtCZ3eBAdVbJ47TqzAcKV2+w5vGrdo7mm99+DGPtJJx7C9LtZmlGbFZQ7TbLXqm+T7wzQQ0GHRZkZ26P1J1HA==",
+  "dgSpecHash": "GRBFiuy48SEnHfrPCfcXhnPRi2fB6vmldvvu1VWIhoQKUD5S9pcxRn0QzcuglwqDZG1Ycdsa2botqjH2kVGiSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Goncalo\\source\\repos\\KubernetsClient\\KubernetsClient\\KubernetsClient.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\Goncalo\\.nuget\\packages\\fractions\\4.0.1\\fractions.4.0.1.nupkg.sha512",
     "C:\\Users\\Goncalo\\.nuget\\packages\\identitymodel\\4.1.0\\identitymodel.4.1.0.nupkg.sha512",
     "C:\\Users\\Goncalo\\.nuget\\packages\\identitymodel.oidcclient\\3.1.2\\identitymodel.oidcclient.3.1.2.nupkg.sha512",
-    "C:\\Users\\Goncalo\\.nuget\\packages\\kubernetesclient\\5.0.9\\kubernetesclient.5.0.9.nupkg.sha512",
+    "C:\\Users\\Goncalo\\.nuget\\packages\\kubernetesclient\\5.0.10\\kubernetesclient.5.0.10.nupkg.sha512",
     "C:\\Users\\Goncalo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Goncalo\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
     "C:\\Users\\Goncalo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.1.0\\microsoft.extensions.configuration.abstractions.2.1.0.nupkg.sha512",

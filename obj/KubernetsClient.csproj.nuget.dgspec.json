@@ -42,7 +42,7 @@
           "dependencies": {
             "KubernetesClient": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.10, )"
             },
             "SSH.NET": {
               "target": "Package",
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
