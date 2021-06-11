@@ -43,7 +43,15 @@ namespace KubernetsClient
             var deployments = await formAux.client.ListNamespacedDeploymentWithHttpMessagesAsync(formAux.namespaceSelected);
             foreach (var deployment in deployments.Body.Items)
             {
-                createListView(deployment.Metadata.Name, deployment.Status.Replicas.Value, deployment.Status.AvailableReplicas.Value, deployment.Status.AvailableReplicas.Value.ToString(), deployment.Metadata.CreationTimestamp.Value);
+                try
+                {
+                    createListView(deployment.Metadata.Name, deployment.Status.Replicas.Value, deployment.Status.AvailableReplicas.Value, deployment.Status.AvailableReplicas.Value.ToString(), deployment.Metadata.CreationTimestamp.Value);
+
+                }
+                catch { MessageBox.Show("Impossible connect with worker !"); this.Close(); }
+
+
+
             }
         }
 

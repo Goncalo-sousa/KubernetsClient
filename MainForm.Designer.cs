@@ -29,12 +29,12 @@ namespace KubernetsClient
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxIPServer = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCreateNamespace = new System.Windows.Forms.Button();
@@ -43,21 +43,24 @@ namespace KubernetsClient
             this.btnDeployment = new System.Windows.Forms.Button();
             this.btnServices = new System.Windows.Forms.Button();
             this.listViewNodes = new System.Windows.Forms.ListView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 0;
+            this.textBoxUsername.Location = new System.Drawing.Point(38, 89);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(100, 23);
+            this.textBoxUsername.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(38, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 1;
+            this.textBoxPassword.Location = new System.Drawing.Point(38, 148);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(100, 23);
+            this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -74,25 +77,25 @@ namespace KubernetsClient
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(38, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(63, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "Username:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(38, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(60, 15);
             this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.label2.Text = "Password:";
             // 
-            // textBox3
+            // textBoxIPServer
             // 
-            this.textBox3.Location = new System.Drawing.Point(38, 203);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 5;
+            this.textBoxIPServer.Location = new System.Drawing.Point(38, 203);
+            this.textBoxIPServer.Name = "textBoxIPServer";
+            this.textBoxIPServer.Size = new System.Drawing.Size(100, 23);
+            this.textBoxIPServer.TabIndex = 5;
             // 
             // listBox1
             // 
@@ -171,11 +174,31 @@ namespace KubernetsClient
             this.listViewNodes.TabIndex = 14;
             this.listViewNodes.UseCompatibleStateImageBehavior = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(38, 185);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 15);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "IP server:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(266, 109);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 15);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Namespaces:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.listViewNodes);
             this.Controls.Add(this.btnServices);
             this.Controls.Add(this.btnDeployment);
@@ -184,12 +207,12 @@ namespace KubernetsClient
             this.Controls.Add(this.btnCreateNamespace);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxIPServer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUsername);
             this.Name = "MainForm";
             this.Text = "Create Namespace";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -200,12 +223,12 @@ namespace KubernetsClient
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxIPServer;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCreateNamespace;
@@ -215,6 +238,8 @@ namespace KubernetsClient
         private System.Windows.Forms.Button btnServices;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ListView listViewNodes;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

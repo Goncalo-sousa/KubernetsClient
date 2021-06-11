@@ -27,8 +27,8 @@ namespace KubernetsClient
             this.listViewPods.Columns.Clear();
             this.listViewPods.Columns.Add("Name", -2, HorizontalAlignment.Left);
             this.listViewPods.Columns.Add("Pod IP", -2, HorizontalAlignment.Left);
-            this.listViewPods.Columns.Add("Status", -2, HorizontalAlignment.Left);
             this.listViewPods.Columns.Add("Date created", -2, HorizontalAlignment.Left);
+            this.listViewPods.Columns.Add("", -5, HorizontalAlignment.Left);
         }
 
         private void PodsForm_Load(object sender, EventArgs e)
@@ -43,11 +43,11 @@ namespace KubernetsClient
             var pods = formAux.client.ListNamespacedPod(formAux.namespaceSelected);
             foreach (var pod in pods.Items)
             {
-                string[] row = { pod.Metadata.Name,pod.Status.PodIP ,podStatus(pod), pod.Metadata.CreationTimestamp.ToString() };
+                string[] row = { pod.Metadata.Name, pod.Status.PodIP,/*podStatus(pod),*/ pod.Metadata.CreationTimestamp.ToString() };
                 var listItem = new ListViewItem(row);
                 this.listViewPods.Items.Add(listItem);
                 this.listViewPods.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-               
+
             }
         }
         private static string podStatus(V1Pod pod)
@@ -76,6 +76,8 @@ namespace KubernetsClient
             DialogResult result = MessageBox.Show("Do you want to save changes?", "Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
+                listViewPods.Items[listViewPods.FocusedItem.Index].SubItems.Add("Deleting .....");
+                listViewPods.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
                 var status = formAux.client.DeleteNamespacedPod(listViewPods.FocusedItem.Text, formAux.namespaceSelected, new V1DeleteOptions());
                 await Task.Delay(8000);
                 listPods();
